@@ -32,7 +32,10 @@ namespace C_Sharpad
         {
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
-                textBox1.AppendText(openFileDialog1.FileName);
+                string Content, Filename;
+                Filename = (openFileDialog1.FileName);
+                Content = File.ReadAllText(Filename);
+                textBox1.Text = Content;
             }
         }
 
