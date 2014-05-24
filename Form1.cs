@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace C_Sharpad
 {
@@ -19,12 +20,20 @@ namespace C_Sharpad
 
         private void SaveButton_Click(object sender, EventArgs e)
         {
-
+            if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                string FileName;
+                FileName = saveFileDialog1.FileName;
+                File.WriteAllText(FileName, textBox1.Text);
+            }
         }
 
         private void OpenButton_Click(object sender, EventArgs e)
         {
-
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                textBox1.AppendText(openFileDialog1.FileName);
+            }
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)

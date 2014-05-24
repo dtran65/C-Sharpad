@@ -32,6 +32,8 @@
             this.OpenButton = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.ClearButton = new System.Windows.Forms.Button();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.SuspendLayout();
             // 
             // SaveButton
@@ -74,6 +76,10 @@
             this.ClearButton.UseVisualStyleBackColor = true;
             this.ClearButton.Click += new System.EventHandler(this.ClearButton_Click);
             // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -83,8 +89,8 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.OpenButton);
             this.Controls.Add(this.SaveButton);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "C-Sharpad";
+            this.Text = "C-Sharpad";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -96,6 +102,8 @@
         private System.Windows.Forms.Button OpenButton;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button ClearButton;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }
 
