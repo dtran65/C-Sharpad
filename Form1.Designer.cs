@@ -34,6 +34,7 @@
             this.ClearButton = new System.Windows.Forms.Button();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.ExitButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // SaveButton
@@ -68,7 +69,7 @@
             // 
             // ClearButton
             // 
-            this.ClearButton.Location = new System.Drawing.Point(12, 12);
+            this.ClearButton.Location = new System.Drawing.Point(156, 12);
             this.ClearButton.Name = "ClearButton";
             this.ClearButton.Size = new System.Drawing.Size(75, 23);
             this.ClearButton.TabIndex = 3;
@@ -80,16 +81,27 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
+            // ExitButton
+            // 
+            this.ExitButton.Location = new System.Drawing.Point(12, 12);
+            this.ExitButton.Name = "ExitButton";
+            this.ExitButton.Size = new System.Drawing.Size(75, 23);
+            this.ExitButton.TabIndex = 4;
+            this.ExitButton.Text = "Exit";
+            this.ExitButton.UseVisualStyleBackColor = true;
+            this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(405, 449);
+            this.Controls.Add(this.ExitButton);
             this.Controls.Add(this.ClearButton);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.OpenButton);
             this.Controls.Add(this.SaveButton);
-            this.Name = "C-Sharpad";
+            this.Name = "Form1";
             this.Text = "C-Sharpad";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -104,6 +116,7 @@
         private System.Windows.Forms.Button ClearButton;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.Button ExitButton;
     }
 }
 

@@ -48,5 +48,10 @@ namespace C_Sharpad
         {
             textBox1.Text = "";
         }
+
+        private void ExitButton_Click(object sender, EventArgs e)
+        {
+            Environment.Exit(0);
+        }
     }
 }
